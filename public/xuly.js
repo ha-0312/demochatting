@@ -1,4 +1,4 @@
-var socket = io("http://localhost:8888");
+var socket = io("https://chattingappbyha.herokuapp.com");
 
 //Dang ki that bai
 socket.on("server-send-dangki-thatbai", function(){
