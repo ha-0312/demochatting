@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo Chat</title>
+    <script src="jquery.js" charset="utf-8"></script>
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="xuly.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="layout.css" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="loginForm">
+        <h3>What's Your Name?</h3>
+        <input type="text" id="txtUsername">
+        <input type="button" id="btnRegister" value="Register">
+      </div>
+      <div id="chatForm">
+        <div id="left">
+          <div id="boxTitle">Users Online</div>
+          <div id="boxContent">
+            // insert dynamic list currentUser here
+          </div>
+        </div>
+        <div id="right">
+          <div id="sayHi">
+            Hello <span id="currentUser">Teo</span>
+            <input type="button" value="Logout" id="btnLogout">
+          </div>
+          <div id="listMessages"></div>
+          <div style="background-color: white;">
+            <div id="thongbao"></div>
+            <input type="text" name="" value="" id="txtMessage">
+            <input type="button" name="" value="Send" id="btnSendMessage">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
